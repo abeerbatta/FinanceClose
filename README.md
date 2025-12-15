@@ -9,15 +9,15 @@
 
 <h3>Repository contents</h3>
 <ul>
-  <li><code>data/</code> – Public GL CSV/Excel files used as the source system.</li>
-  <li><code>sql/01_create_schemas_and_tables.sql</code> – Creates <code>stg</code> and <code>dw</code> schemas and all tables (staging + star schema).</li>
-  <li><code>sql/02_load_staging_notes.md</code> – Notes on loading the GL file into <code>stg.GeneralLedgerRaw</code> via SSMS Import Wizard or Python.</li>
-  <li><code>sql/03_populate_dimensions.sql</code> – Populates <code>DimTime</code>, <code>DimFund</code>, <code>DimAccount</code>, <code>DimDept</code> from the staging table.</li>
-  <li><code>sql/04_populate_factgl.sql</code> – Populates <code>FactGL</code> with surrogate keys and numeric measures.</li>
+  <li><code>data/</code> Source: https://catalog.data.gov/dataset/general-ledger/resource/19febcf5-8baa-4c1b-bb75-c76d25071e01?inner_span=True </li>
+  <li>Public GL CSV/Excel files used as the source system.</li>
+  <li><code>sql/createstg.sql</code> – Creates <code>stg</code> and <code>dw</code> schemas and all tables (staging + star schema).</li>
+  <li><code>sql/createdwschema.sql</code> – Populates <code>DimTime</code>, <code>DimFund</code>, <code>DimAccount</code>, <code>DimDept</code> from the staging table.</li>
+  <li><code>sql/populatestg.sql</code> – Populates <code>FactGL</code> with surrogate keys and numeric measures.</li>
+  <li><code>sql/populatedw.sql</code> – Populates stg table with data.</li>
   <li><code>FinanceCloseDemo.pbix</code> – Power BI report with the P&amp;L-style matrix and slicers.</li>
   <li><code>docs/erd.png</code> – Star schema diagram (FactGL + dimensions).</li>
   <li><code>docs/report_pnl.png</code> – Screenshot of the P&amp;L matrix with fund/department slicers.</li>
-  <li><code>docs/data_flow.png</code> – High-level data flow: Source CSV → Staging → DW Star Schema → Power BI.</li>
 </ul>
 
 <h3>Data flow</h3>
