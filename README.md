@@ -60,5 +60,5 @@
 <ul>
   <li>End‑to‑end understanding of how GL data moves from raw extracts through staging and cleansing into an OLAP‑friendly star schema.</li>
   <li>Ability to design and implement dimensional models (fact + dimensions) suitable for consolidation and reporting platforms such as Longview Close.</li>
-  <li>Hands‑on experience connecting SQL Server to Power BI and building P&amp;L-style, pivot‑like analytics with fund and department slicers—directly relevant to roles supporting Workiva/Longview and finance transformation.</li>
+  <li>Hands‑on experience connecting SQL Server to Power BI and building P&amp;L-style, pivot‑like analytics with fund and department slicers.</li>
 </ul>
